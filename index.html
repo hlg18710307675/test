@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+
+   <title></title>
+    <style>
+        .box{
+            width:200px;
+            height:260px;
+            border:1px solid red;
+            background: url("img/1.jpg") no-repeat -100px 0;
+            position: relative;
+            transition: all 1s;
+            float: left;
+        }
+        .box>div{
+            position: absolute;
+            top:0;
+            left:0;
+            transition: all 1s;
+        }
+        .bg{
+            width:100%;
+            height:260px;
+            background: #5e5e5e;
+            opacity: 0.3;
+        }
+        .content{
+            width:100%;
+            height:260px;
+            text-align: center;
+            /*z-index: 100;*/
+            font-size: 50px;
+        }
+        .box:hover{
+            width:400px;
+            background: url("img/1.jpg");
+        }
+        .box:hover div{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="bg"></div>
+    <div class="content">园<br>林<br>酒<br>店</div>
+</div>
+<div class="box">
+    <div class="bg"></div>
+    <div class="content">园<br>林<br>酒<br>店</div>
+</div>
+<div class="box">
+    <div class="bg"></div>
+    <div class="content">园<br>林<br>酒<br>店</div>
+</div>
+</body>
+</html>
